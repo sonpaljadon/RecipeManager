@@ -1,8 +1,6 @@
 package com.monsanto.mbt;
 
 import java.util.Date;
-
-
 public class Widget {
     private int serialNumber;
     private String color;
@@ -37,4 +35,10 @@ public class Widget {
     public void setProductionDate(Date productionDate) {
         this.productionDate = productionDate;
     }
+
+	@Override
+	public String toString() {
+		return "Widget [serialNumber=" + serialNumber + ", color=" + color + ", productionDate=" + productionDate + "]";
+	}
+    
 }
